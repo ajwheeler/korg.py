@@ -14,13 +14,14 @@ build-backend = "hatchling.build"
 
 [project]
 name = "korg"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 dynamic = ["version"]  # jump down to [tool.hatch] for more info
 license = "BSD-3-Clause"
 license-files = [
     "LICENSE"
 ]
 description = "fast 1D LTE stellar spectral synthesis"
+readme = "README.rst"
 authors = [
   {name = "Adam Wheeler", email = "adamwhlr@gmail.com"},
   {name = "Matthew W. Abruzzo", email = "matthewabruzzo@gmail.com" },
@@ -40,16 +41,11 @@ classifiers = [
     "Programming Language :: C++",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Topic :: Scientific/Engineering :: Astronomy",
     "Topic :: Scientific/Engineering :: Physics",
 ]
-
-[project.readme]
-file = "README.md"
-content-type = "text/markdown"
 
 [project.urls]
 Homepage = 'https://github.com/ajwheeler/pykorg'
